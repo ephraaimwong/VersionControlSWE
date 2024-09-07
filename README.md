@@ -33,7 +33,17 @@ Integrates entire history (all commits) of one branch into another. A "**merge c
 ### How DO???
 
 1) Switch over to the **Target Branch** (Branch to be merged on) via git checkout.
-2)
+
+
+## Git Rebase
+
+### How Work?
+
+Appends feature branch unto target branch, a linear sort of merging. The version of main becomes the start point where the feature branch is frankensteined unto.
+
+![rebase diagram](./03%20Rebasing%20the%20feature%20branch%20into%20main.svg)
+
+### How DO???
 
 
 
