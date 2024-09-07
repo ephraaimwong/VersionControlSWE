@@ -20,9 +20,20 @@ Once coded to one's hearts content, the branch can be merged back to main for ch
 
 Notice the * beside main, that signifies the HEAD pointer showing which branch is active!
 
-
 ![git checkout](./git%20checkout%20code.png)
 
+## Git Merge!
+
+### How Work?
+
+Integrates entire history (all commits) of one branch into another. A "**merge commit**" is created. The version pointer of main then points to merged version.
+
+![merge diagram](./02%20Merging%20main%20into%20the%20feature%20branh.svg)
+
+### How DO???
+
+1) Switch over to the **Target Branch** (Branch to be merged on) via git checkout.
+2)
 
 
 |            | Merge                                                                                                                                                                                                                                     | Rebase                                                                                                                                                                                                                                         |                                                                                                                 Squash                                                                                                                 |
