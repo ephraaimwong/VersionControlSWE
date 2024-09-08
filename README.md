@@ -50,8 +50,12 @@ Appends feature branch unto target branch, a linear sort of merging. The version
 ![rebase diagram](./03%20Rebasing%20the%20feature%20branch%20into%20main.svg)
 
 ### How DO???
+1) Switch over to the target branch via `git checkout <target branch>`
+2) Run `git rebase <feature branch>`
 
-
+Before| After|
+--|--|
+![before](./beforerebase.png)|![after](./afterrebase.png)
 
 
 |            | Merge                                                                                                                                                                                                                                     | Rebase                                                                                                                                                                                                                                         |                                                                                                                 Squash                                                                                                                 |
