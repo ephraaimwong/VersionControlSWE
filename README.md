@@ -57,8 +57,15 @@ Before| After|
 --|--|
 ![before](./beforerebase.png)|![after](./afterrebase.png)
 
+## Git Squash
+### How Work?
+Conpressing multiple commits, even an entire branch into a single commit, therefore **SQUASH**.
 
-|            | Merge                                                                                                                                                                                                                                     | Rebase                                                                                                                                                                                                                                         |                                                                                                                 Squash                                                                                                                 |
-| ------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| How Work?? | Integrates entire history (all commits) of one branch into another. A "**merge commit**" is created. The version pointer of main then points to merged version.![merge diagram](./02%20Merging%20main%20into%20the%20feature%20branh.svg) | Appends feature branch unto target branch, a linear sort of merging. The version of main becomes the start point where the feature branch is frankensteined unto.![rebase diagram](./03%20Rebasing%20the%20feature%20branch%20into%20main.svg) | Conpressing multiple commits, even an entire branch into a single commit, therefore**SQUASH**. Aint no *git - squash* command, instead it is achieved via Git's **Interactive Rebase**.![Squash diagram](./Commits-to-be-squashed.gif) |
-| How DO??   |                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                |                                                                                                                                                                                                                                       |
+![Squash diagram](./Commits-to-be-squashed.gif) 
+
+### How DO?
+Squash Merge
+1) `git checkout <target branch>`
+2) `git merge --squash <feature branch>`
+3) `git commit -m "text here"`
+4) `git push origin <target branch>`
